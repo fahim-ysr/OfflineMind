@@ -26,6 +26,22 @@ prompt = ChatPromptTemplate.from_template(template)
 # Creating a chain of both prompt and model
 chain = prompt | model
 
-res = chain.invoke({"context": "", "question": "hey how are you?"})
-print(res)
+def conversation():
+    context = ""
+    print("Welcone to the Python-Ollama AI Chatbot! Type `exit` to quit.")
+    # Infinite loop for carrying on a conversation
+    while True:
+        user_input = input("You: ")
+        if user_input.lower() == "exit":
+            break
+        
+        res = chain.invoke({"context": "", "question": "hey how are you?"})
+        print("AI: " + res)
+
+        # Storing conversation history (Passing back the conversation)
+        context += f"\nUser: {user_input}\nAI: {res}"
+
+# Directly executing the Python file
+if __name__ == "__main__":
+    conversation()
 
