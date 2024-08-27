@@ -35,8 +35,8 @@ def conversation():
         if user_input.lower() == "exit":
             break
         
-        res = chain.invoke({"context": "", "question": "hey how are you?"})
-        print("AI: " + res)
+        res = chain.invoke({"context": context, "question": user_input})
+        print("Chatbot: ", res)
 
         # Storing conversation history (Passing back the conversation)
         context += f"\nUser: {user_input}\nAI: {res}"
