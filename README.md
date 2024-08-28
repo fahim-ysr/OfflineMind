@@ -1,2 +1,1 @@
-#AI Chatbot using Python and Ollama
-
+# AI Chatbot using Python and Ollama
