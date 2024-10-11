@@ -33,16 +33,18 @@ def change_model(new_model):
 
 def conversation():
     context = ""
-    print("Welcone to the Python-Ollama AI Chatbot! Type `exit` to quit.")
+    print("Welcome to the Python-Ollama AI Chatbot! \nType `exit` to quit. \nType 'change model' to swap between different available models.")
     # Infinite loop for carrying on a conversation
     while True:
         user_input = input("You: ")
         if user_input.lower() == "exit":
             print("End of conversation...\n")
             break
+
+        # Enables user to change models
         elif user_input.lower() == "change model":
             print("Available models: \nllama3.1\ngemma2\nllama3\ndolphin-mistral\ndolphin-llama3")
-            new_model = input("Enter your desired model: ")
+            new_model = input("Enter the model name: ")
             change_model(new_model)
             print(f"Model changed to: {new_model}.\n")
             continue
