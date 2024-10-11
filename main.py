@@ -21,10 +21,15 @@ Answer:
 # Can replace the model name with other models
 model = OllamaLLM(model="llama3")
 
+# Formats the 'template' string to generate response
 prompt = ChatPromptTemplate.from_template(template)
 
 # Creating a chain of both prompt and model
 chain = prompt | model
+
+# Changes Ollama models
+def change_model(new_model):
+    return OllamaLLM(model=new_model)
 
 def conversation():
     context = ""
@@ -33,7 +38,14 @@ def conversation():
     while True:
         user_input = input("You: ")
         if user_input.lower() == "exit":
+            print("End of conversation...\n")
             break
+        elif user_input.lower() == "change model":
+            print("Available models: \nllama3.1\ngemma2\nllama3\ndolphin-mistral\ndolphin-llama3")
+            new_model = input("Enter your desired model: ")
+            change_model(new_model)
+            print(f"Model changed to: {new_model}.\n")
+            continue
         
         res = chain.invoke({"context": context, "question": user_input})
         print("Chatbot: ", res)
