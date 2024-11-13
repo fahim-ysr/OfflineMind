@@ -1,6 +1,6 @@
-# AI Chatbot using Python and Ollama
+# AI Chatbot using Python and Ollama (Better than conventional AI chatbots)
 
-**This project implements an AI-powered chatbot using Ollama and large language models. It allows users to interact with various AI models through a simple Python interface.**
+**This project implements an AI-powered chatbot using Ollama and LLMs. Allows users to interact with multiple AI models through a simple Python interface.**
 
 <br>
 
