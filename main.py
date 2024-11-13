@@ -44,9 +44,9 @@ def conversation():
         # Enables user to change models
         elif user_input.lower() == "change model":
             print("Available models: \nllama3.1\ngemma2\nllama3\ndolphin-mistral\ndolphin-llama3")
-            new_model = input("Enter the model name: ")
+            new_model = input("\n*** Enter the model name: ")
             change_model(new_model)
-            print(f"Model changed to: {new_model}.\n")
+            print(f"*** Model changed to: {new_model}.\n")
             continue
         
         res = chain.invoke({"context": context, "question": user_input})
