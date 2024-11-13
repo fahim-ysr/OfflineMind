@@ -41,7 +41,7 @@
 
 **Customization**
  
-- You can customize the models by changing the `model` parameter in the `OllamaLLM` function.
+- You can customize the models by changing the `model` parameter in the `OllamaLLM` function or simply typing `change model` mid-chat.
 
 <br>
 
