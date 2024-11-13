@@ -6,7 +6,7 @@
 
 **Please click the thumbnail for a preview. 👇**
 
-[![Watch the video](assets/demo.png)](https://youtu.be/IMejWQyZxvQ)
+[![Watch the video](assets/Demo-Updated.png)](https://youtu.be/IMejWQyZxvQ)
 
 <br>
 
