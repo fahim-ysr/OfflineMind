@@ -4,7 +4,7 @@
 
 <br>
 
-**Please click the thumbnail for a preview. 👇**
+**Please click the thumbnail to view the demo. 👇**
 
 [![Watch the video](assets/Demo-Updated.png)](https://youtu.be/IMejWQyZxvQ)
 
